@@ -3,6 +3,12 @@ public class Student {
     private String lastName;
     private int ticketId;
 
+    public Student(String name, String lastName) {
+        this.name = name;
+        this.lastName = lastName;
+        this.ticketId = -1;
+    }
+
     public String getName() {
         return name;
     }
@@ -26,12 +32,4 @@ public class Student {
     public void setTicketId(int ticketId) {
         this.ticketId = ticketId;
     }
-
-    public Student(String name, String lastName) {
-        this.name = name;
-        this.lastName = lastName;
-        this.ticketId = -1;
-    }
-
-
 }
